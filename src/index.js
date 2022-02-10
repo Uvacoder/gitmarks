@@ -157,7 +157,7 @@ class App extends Component {
 
   applyFiler(data) {
     const { langFilter } = this.state;
-    if (!langFilter || langFilter != "All") {
+    if (!langFilter || langFilter !== "All") {
       return data.filter(d => d.language === langFilter);
     }
     return data;
